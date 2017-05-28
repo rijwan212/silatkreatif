@@ -13,7 +13,7 @@ class PageController extends Controller
 
     public function getBeranda()
     {
-        return view('beranda');
+        return view('page.beranda');
     }
 
     public function getSilatBetawi()
