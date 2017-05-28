@@ -1,6 +1,6 @@
- @extends('layout')
- @section('container')
-    
+@extends('page.layouts.master')
+@section('content')
+
     <section id="page-breadcrumb">
         <div class="vertical-center sun">
              <div class="container">
@@ -16,7 +16,7 @@
         </div>
     </section>
     <!--/#page-breadcrumb-->
-    
+
     <section id="blog" class="padding-bottom">
         <div class="container">
             <div class="row">
@@ -41,7 +41,7 @@
                                     <p>Sebuah seminar tentang pentingnya beladiri silat dalam kesehatan tubuh. dibawakan oleh narasumber master silat tiga berantai iko uwais. Seminar ini akan membahas tentang pernapasan beladiri silat yang[...]</p>
                                     <a href="#" class="read-more">View More</a>
                                     <div class="post-bottom overflow">
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -62,7 +62,7 @@
                                     <p>Sebuah seminar yang akan membahas tentang bagaimana melakukan pukulan tanpa bayangan, pukulan tanpa bayangan adalah sebuah jurus yang disegani oleh para petarung. seminar akan dibawakan oleh bang fauzi JTS[...]</p>
                                     <a href="#" class="read-more">View More</a>
                                     <div class="post-bottom overflow">
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -107,7 +107,7 @@
                                     <p>Sebuah seminar yang akan membahas tentang kebudayaan betawi dari sisi negarawan. yang akan mengangkat tema kebudayaan betawi dalam kenangan[...]</p>
                                     <a href="#" class="read-more">View More</a>
                                     <div class="post-bottom overflow">
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -128,7 +128,7 @@
                                     <p>Membahas sosok nyata sang jawara betawi, sisi lain yang tak terungkap oleh masyarakat dibalik beladiri sang pitung. Mengupas sejarah yang dilupakan oleh sebagian masyarakat betawi[...]</p>
                                     <a href="#" class="read-more">View More</a>
                                     <div class="post-bottom overflow">
-                                       
+
                                     </div>
                                 </div>
                             </div>

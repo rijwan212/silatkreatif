@@ -1,5 +1,5 @@
- @extends('layout')
- @section('container')
+@extends('page.layouts.master')
+@section('content')
 
     <section id="page-breadcrumb">
         <div class="vertical-center sun">
@@ -41,7 +41,7 @@
                                         <div class="person-thumb">
                                          <iframe width="280" height="295" src="https://www.youtube.com/embed/wkUGzFhbcY0" frameborder="0" allowfullscreen></iframe>
                                         </div>
-                                        
+
                                     </div>
                                     <div class="person-info">
                                         <h2>John Doe</h2>
@@ -55,7 +55,7 @@
                                         <div class="person-thumb">
                                               <iframe width="280" height="295" src="https://www.youtube.com/embed/1B9aV1Jiyjs" frameborder="0" allowfullscreen></iframe>
                                         </div>
-                                        
+
                                     </div>
                                     <div class="person-info">
                                         <h2>John Doe</h2>
@@ -69,7 +69,7 @@
                                         <div class="person-thumb">
                                            <iframe width="280" height="295" src="https://www.youtube.com/embed/eH4Kd4bPF_Y" frameborder="0" allowfullscreen></iframe>
                                         </div>
-                                        
+
                                     </div>
                                     <div class="person-info">
                                         <h2>John Doe</h2>
@@ -83,7 +83,7 @@
                                         <div class="person-thumb">
                                            <iframe width="280" height="295" src="https://www.youtube.com/embed/VwjmA9nKlsA" frameborder="0" allowfullscreen></iframe>
                                         </div>
-                                       
+
                                     </div>
                                     <div class="person-info">
                                         <h2>John Doe</h2>
@@ -99,7 +99,7 @@
                                         <div class="person-thumb">
                                              <iframe width="280" height="295" src="https://www.youtube.com/embed/WsyXNMy1u30" frameborder="0" allowfullscreen></iframe>
                                         </div>
-                                       
+
                                     </div>
                                     <div class="person-info">
                                         <h2>John Doe</h2>
@@ -113,7 +113,7 @@
                                         <div class="person-thumb">
                                              <iframe width="280" height="295" src="https://www.youtube.com/embed/Fc8ZWL2MLSU" frameborder="0" allowfullscreen></iframe>
                                         </div>
-                                      
+
                                     </div>
                                     <div class="person-info">
                                         <h2>John Doe</h2>
@@ -127,7 +127,7 @@
                                         <div class="person-thumb">
                                             <iframe width="280" height="295" src="https://www.youtube.com/embed/VMJk2DPd22Y" frameborder="0" allowfullscreen></iframe>
                                         </div>
-                                       
+
                                     </div>
                                     <div class="person-info">
                                         <h2>John Doe</h2>
@@ -141,7 +141,7 @@
                                         <div class="person-thumb">
                                         <iframe width="280" height="295" src="https://www.youtube.com/embed/N7wULRqL5wk"  frameborder="0" allowfullscreen></iframe>
                                         </div>
-                                       
+
                                     </div>
                                     <div class="person-info">
                                         <h2>John Doe</h2>
@@ -178,7 +178,7 @@
                                         <div class="person-thumb">
                                          <iframe width="280" height="295" src="https://www.youtube.com/embed/wkUGzFhbcY0" frameborder="0" allowfullscreen></iframe>
                                         </div>
-                                        
+
                                     </div>
                                     <div class="person-info">
                                         <h2>John Doe</h2>
@@ -192,7 +192,7 @@
                                         <div class="person-thumb">
                                               <iframe width="280" height="295" src="https://www.youtube.com/embed/1B9aV1Jiyjs" frameborder="0" allowfullscreen></iframe>
                                         </div>
-                                        
+
                                     </div>
                                     <div class="person-info">
                                         <h2>John Doe</h2>
@@ -206,7 +206,7 @@
                                         <div class="person-thumb">
                                            <iframe width="280" height="295" src="https://www.youtube.com/embed/eH4Kd4bPF_Y" frameborder="0" allowfullscreen></iframe>
                                         </div>
-                                        
+
                                     </div>
                                     <div class="person-info">
                                         <h2>John Doe</h2>
@@ -220,7 +220,7 @@
                                         <div class="person-thumb">
                                            <iframe width="280" height="295" src="https://www.youtube.com/embed/VwjmA9nKlsA" frameborder="0" allowfullscreen></iframe>
                                         </div>
-                                       
+
                                     </div>
                                     <div class="person-info">
                                         <h2>John Doe</h2>
@@ -236,7 +236,7 @@
                                         <div class="person-thumb">
                                              <iframe width="280" height="295" src="https://www.youtube.com/embed/WsyXNMy1u30" frameborder="0" allowfullscreen></iframe>
                                         </div>
-                                       
+
                                     </div>
                                     <div class="person-info">
                                         <h2>John Doe</h2>
@@ -250,7 +250,7 @@
                                         <div class="person-thumb">
                                              <iframe width="280" height="295" src="https://www.youtube.com/embed/Fc8ZWL2MLSU" frameborder="0" allowfullscreen></iframe>
                                         </div>
-                                      
+
                                     </div>
                                     <div class="person-info">
                                         <h2>John Doe</h2>
@@ -264,7 +264,7 @@
                                         <div class="person-thumb">
                                             <iframe width="280" height="295" src="https://www.youtube.com/embed/VMJk2DPd22Y" frameborder="0" allowfullscreen></iframe>
                                         </div>
-                                       
+
                                     </div>
                                     <div class="person-info">
                                         <h2>John Doe</h2>
@@ -278,7 +278,7 @@
                                         <div class="person-thumb">
                                         <iframe width="280" height="295" src="https://www.youtube.com/embed/N7wULRqL5wk"  frameborder="0" allowfullscreen></iframe>
                                         </div>
-                                       
+
                                     </div>
                                     <div class="person-info">
                                         <h2>John Doe</h2>

@@ -1,5 +1,5 @@
- @extends('layout')
- @section('container')
+@extends('page.layouts.master')
+@section('content')
     <section id="page-breadcrumb">
         <div class="vertical-center sun">
              <div class="container">
@@ -49,7 +49,7 @@
                 <p class="text-center padding-bottom wow fadeInDown" data-wow-duration="400ms" data-wow-delay="400ms">Berikut beberapa dokumentasi kami dalam berbagai kegiatan baik seminar,<br>
                 karnaval,workshop, dan lain lain </p>
                 <div class="col-sm-3 col-xs-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
-                    <div class="portfolio-wrapper">   
+                    <div class="portfolio-wrapper">
                         <div class="portfolio-single">
                             <div class="portfolio-thumb">
                                 <img src="images/portfolio/1.jpg" class="img-responsive" alt="">
@@ -66,7 +66,7 @@
                     </div>
                 </div>
                 <div class="col-sm-3 col-xs-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">
-                    <div class="portfolio-wrapper">   
+                    <div class="portfolio-wrapper">
                         <div class="portfolio-single">
                             <div class="portfolio-thumb">
                                 <img src="images/portfolio/2.jpg" class="img-responsive" alt="">
@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 <div class="col-sm-3 col-xs-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="500ms">
-                    <div class="portfolio-wrapper">   
+                    <div class="portfolio-wrapper">
                         <div class="portfolio-single">
                             <div class="portfolio-thumb">
                                 <img src="images/portfolio/3.jpg" class="img-responsive" alt="">
@@ -100,7 +100,7 @@
                     </div>
                 </div>
                 <div class="col-sm-3 col-xs-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
-                    <div class="portfolio-wrapper">   
+                    <div class="portfolio-wrapper">
                         <div class="portfolio-single">
                             <div class="portfolio-thumb">
                                 <img src="images/portfolio/4.jpg" class="img-responsive" alt="">
@@ -117,7 +117,7 @@
                     </div>
                 </div>
                 <div class="col-sm-3 col-xs-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="700ms">
-                    <div class="portfolio-wrapper">   
+                    <div class="portfolio-wrapper">
                         <div class="portfolio-single">
                             <div class="portfolio-thumb">
                                 <img src="images/portfolio/5.jpg" class="img-responsive" alt="">
@@ -134,7 +134,7 @@
                     </div>
                 </div>
                 <div class="col-sm-3 col-xs-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="800ms">
-                    <div class="portfolio-wrapper">   
+                    <div class="portfolio-wrapper">
                         <div class="portfolio-single">
                             <div class="portfolio-thumb">
                                 <img src="images/portfolio/6.jpg" class="img-responsive" alt="">
@@ -151,7 +151,7 @@
                     </div>
                 </div>
                 <div class="col-sm-3 col-xs-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
-                    <div class="portfolio-wrapper">   
+                    <div class="portfolio-wrapper">
                         <div class="portfolio-single">
                             <div class="portfolio-thumb">
                                 <img src="images/portfolio/7.jpg" class="img-responsive" alt="">
@@ -168,7 +168,7 @@
                     </div>
                 </div>
                 <div class="col-sm-3 col-xs-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="1000ms">
-                    <div class="portfolio-wrapper">   
+                    <div class="portfolio-wrapper">
                         <div class="portfolio-single">
                             <div class="portfolio-thumb">
                                 <img src="images/portfolio/8.jpg" class="img-responsive" alt="">
@@ -185,7 +185,7 @@
                     </div>
                 </div>
                    <div class="col-sm-3 col-xs-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="1000ms">
-                    <div class="portfolio-wrapper">   
+                    <div class="portfolio-wrapper">
                         <div class="portfolio-single">
                             <div class="portfolio-thumb">
                                 <img src="images/portfolio/8.jpg" class="img-responsive" alt="">
@@ -202,7 +202,7 @@
                     </div>
                 </div>
                    <div class="col-sm-3 col-xs-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="1000ms">
-                    <div class="portfolio-wrapper">   
+                    <div class="portfolio-wrapper">
                         <div class="portfolio-single">
                             <div class="portfolio-thumb">
                                 <img src="images/portfolio/8.jpg" class="img-responsive" alt="">
@@ -219,7 +219,7 @@
                     </div>
                 </div>
                    <div class="col-sm-3 col-xs-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="1000ms">
-                    <div class="portfolio-wrapper">   
+                    <div class="portfolio-wrapper">
                         <div class="portfolio-single">
                             <div class="portfolio-thumb">
                                 <img src="images/portfolio/8.jpg" class="img-responsive" alt="">
@@ -236,7 +236,7 @@
                     </div>
                 </div>
                    <div class="col-sm-3 col-xs-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="1000ms">
-                    <div class="portfolio-wrapper">   
+                    <div class="portfolio-wrapper">
                         <div class="portfolio-single">
                             <div class="portfolio-thumb">
                                 <img src="images/portfolio/8.jpg" class="img-responsive" alt="">

@@ -1,5 +1,5 @@
-@extends('layout')
- @section('container')  
+@extends('page.layouts.master')
+@section('content') 
     <section id="page-breadcrumb">
         <div class="vertical-center sun">
              <div class="container">
@@ -15,7 +15,7 @@
         </div>
     </section>
     <!--/#page-breadcrumb-->
-    
+
     <section id="blog" class="padding-bottom">
         <div class="container">
             <div class="row">
@@ -38,11 +38,11 @@
                                 </div>
                                 <div class="post-content overflow">
                                     <h2 class="post-title bold"><a href="blogdetails.html">{{$post->title}} </a></h2>
-                                    
+
                                     <p>{{str_limit(strip_tags($post->content),20) }}</p>
                                     <a href="#" class="read-more">View More</a>
                                     <div class="post-bottom overflow">
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -59,16 +59,16 @@
                                 </div>
                                 <div class="post-content overflow">
                                     <h2 class="post-title bold"><a href="blogdetails.html#">{{$post->title}}</a></h2>
-                
+
                                     <p>{{str_limit(strip_tags($post->content),20) }}</p>
                                     <a href="{{ url('situsseminar/'.$post->id) }}" class="read-more">View More</a>
                                     <div class="post-bottom overflow">
-                                        
+
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                                 </div>
                                 @endforeach
                             </div>
