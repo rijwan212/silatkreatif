@@ -26,6 +26,7 @@ class PageController extends Controller
     public function getSilatBetawiId($id)
     {
         $data['post'] = DB::table('posts')->where('id',$id)->first();
+        $data['category'] = DB::table('category')->where('id',$id)->first();
         return view('page.silat-betawi-show',$data);
     }
 
