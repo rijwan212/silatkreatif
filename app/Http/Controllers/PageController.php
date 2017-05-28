@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+//use Illuminate\Http\Request;
+use Session;
+use Request;
+use DB;
+use CRUDBooster;
 
 class PageController extends Controller
 {
@@ -14,31 +18,40 @@ class PageController extends Controller
 
     public function getSilatBetawi()
     {
-        return view('silatbetawi');
+        $data['posts'] = DB::table('posts')->orderby('id','desc')->take(9)->get();
+        return view('page.silat-betawi',$data);
+    }
+
+    public function getSilatBetawiId($id)
+    {
+        $data['post'] = DB::table('posts')->where('id',$id)->first();
+        return view('page.silat-betawi-show',$data);
     }
 
     public function getSeminar()
     {
-        return view('seminar');
+        $data['posts'] = DB::table('posts')->orderby('id','desc')->take(3)->get();
+        return view('page.seminar',$data);
     }
 
     public function getWorkshop()
     {
-        return view('workshop');
+        $data['posts'] = DB::table('posts')->orderby('id','desc')->take(3)->get();
+        return view('page.workshop',$data);
     }
 
     public function getGaleriFoto()
     {
-        return view('foto');
+        return view('page.galeri-foto');
     }
 
     public function getGaleriVideo()
     {
-        return view('video');
+        return view('page.galeri-video');
     }
 
     public function getDaftarSilat()
     {
-        return view('indexx');
+        return view('page.daftar-silat');
     }
 }
