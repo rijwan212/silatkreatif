@@ -65,8 +65,8 @@
                         </li>
                         <li class="dropdown"><a href="portfolio.html">Galeri<i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
-                                <li><a href="galeri/foto">Dokumentasi Foto</a></li>
-                                <li><a href="galeri/video">Video</a></li>
+                                <li><a href="/galeri/foto">Dokumentasi Foto</a></li>
+                                <li><a href="/galeri/video">Video</a></li>
 
                             </ul>
                         </li>
