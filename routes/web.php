@@ -42,23 +42,6 @@ Route::put('/dftr/{id}', 'HomeController@update')->name('update');
 Route::get('/dftr/{id}', 'HomeController@show')->name('show');
 Route::get('/dftr/{id}/edit', 'HomeController@edit')->name('edit');
 
-
-
-
-
-
-
-Route::group(['middleware' => ['web']], function()  {
-Route::resource('blog', 'BlogController');
-	
-});
-
-Route::post('/test-request', function () {
-    $request = app('Illuminate\Http\Request');
-    dd($request->all());
-})->name('test-request');
-
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
