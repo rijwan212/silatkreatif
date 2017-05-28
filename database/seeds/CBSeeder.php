@@ -15,6 +15,7 @@ class CBSeeder extends Seeder
 
         $this->call('Cms_usersSeeder');
         $this->call('Cms_modulsSeeder');
+        $this->call('Cms_menusSeeder');
         $this->call('Cms_privilegesSeeder');
         $this->call('Cms_privileges_rolesSeeder');
         $this->call('Cms_settingsSeeder');
@@ -514,6 +515,125 @@ class Cms_usersSeeder extends Seeder {
             ));
         }
 
+    }
+
+}
+
+class Cms_menusSeeder extends Seeder {
+
+    public function run()
+    {
+
+        $data = [
+        [
+
+            'created_at'=>date('Y-m-d H:i:s'),
+            'name'=>'Posts',
+            'type'=>'Route',
+            'path'=>'AdminPostsControllerGetIndex',
+            'color'=> null,
+            'icon'=>'fa fa-pencil',
+            'parent_id'=>0,
+            'is_active'=>1,
+            'is_dashboard'=>0,
+            'id_cms_privileges'=>1,
+            'sorting'=>1
+        ],
+        [
+
+            'created_at'=>date('Y-m-d H:i:s'),
+            'name'=>'Category',
+            'type'=>'Route',
+            'path'=>'AdminCategoryControllerGetIndex',
+            'color'=> null,
+            'icon'=>'fa fa-archive',
+            'parent_id'=>0,
+            'is_active'=>1,
+            'is_dashboard'=>0,
+            'id_cms_privileges'=>1,
+            'sorting'=>2
+        ],
+        [
+
+            'created_at'=>date('Y-m-d H:i:s'),
+            'name'=>'Seminar',
+            'type'=>'Route',
+            'path'=>'AdminSeminarControllerGetIndex',
+            'color'=> null,
+            'icon'=>'fa fa-user',
+            'parent_id'=>0,
+            'is_active'=>1,
+            'is_dashboard'=>0,
+            'id_cms_privileges'=>1,
+            'sorting'=>3
+        ],
+        [
+
+            'created_at'=>date('Y-m-d H:i:s'),
+            'name'=>'Workshop',
+            'type'=>'Route',
+            'path'=>'AdminWorkshopControllerGetIndex',
+            'color'=> null,
+            'icon'=>'fa fa-briefcase',
+            'parent_id'=>0,
+            'is_active'=>1,
+            'is_dashboard'=>0,
+            'id_cms_privileges'=>1,
+            'sorting'=>4
+        ],
+        [
+
+            'created_at'=>date('Y-m-d H:i:s'),
+            'name'=>'Photos',
+            'type'=>'Route',
+            'path'=>'AdminPhotosControllerGetIndex',
+            'color'=> null,
+            'icon'=>'fa fa-camera',
+            'parent_id'=>0,
+            'is_active'=>1,
+            'is_dashboard'=>0,
+            'id_cms_privileges'=>1,
+            'sorting'=>5
+        ],
+        [
+
+            'created_at'=>date('Y-m-d H:i:s'),
+            'name'=>'Videos',
+            'type'=>'Route',
+            'path'=>'AdminVideosControllerGetIndex',
+            'color'=> null,
+            'icon'=>'fa fa-video-camera',
+            'parent_id'=>0,
+            'is_active'=>1,
+            'is_dashboard'=>0,
+            'id_cms_privileges'=>1,
+            'sorting'=>6
+        ],
+        [
+
+            'created_at'=>date('Y-m-d H:i:s'),
+            'name'=>'Registrar',
+            'type'=>'Route',
+            'path'=>'AdminRegistrarControllerGetIndex',
+            'color'=> null,
+            'icon'=>'fa fa-group',
+            'parent_id'=>0,
+            'is_active'=>1,
+            'is_dashboard'=>0,
+            'id_cms_privileges'=>1,
+            'sorting'=>7
+        ]
+
+            ];
+
+
+        foreach($data as $k=>$d) {
+            if(DB::table('cms_menus')->where('name',$d['name'])->count()) {
+                unset($data[$k]);
+            }
+        }
+
+        DB::table('cms_menus')->insert($data);
     }
 
 }
