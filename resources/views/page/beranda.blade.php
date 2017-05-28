@@ -7,7 +7,7 @@
                    <div class="slide-text">
                        <h1>Lestarikan Silat Betawi</h1>
                        <p> Silat merupakan ciri khas seni beladiri Indonesia yang harus kita jaga kelestarianya. Melalui web silatkreatif.com maka kita dapat mengetahui beladiri silat yang masih berkembang di DKI Jakarta & info seputar silat betawi</p>
-                       <a href="silatbetawi" class="btn btn-common">SIGN UP</a>
+                       <a href="/daftar-silat" class="btn btn-common">SIGN UP</a>
                    </div>
                    <img src="images/home/slider/hi.png" class="slider-hill" alt="slider image">
                    <img src="images/home/slider/hou.png" class="slider-house" alt="slider image">
