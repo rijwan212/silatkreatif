@@ -8,15 +8,15 @@
     <title>silatkreatif</title>
     <link href="{{asset('multicolor/css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('multicolor/css/font-awesome.min.css')}}" rel="stylesheet">
-    <link href="{{asset('multicolor/css/animate.min.css')}}" rel="stylesheet"> 
-    <link href="{{asset('multicolor/css/lightbox.css')}}" rel="stylesheet"> 
+    <link href="{{asset('multicolor/css/animate.min.css')}}" rel="stylesheet">
+    <link href="{{asset('multicolor/css/lightbox.css')}}" rel="stylesheet">
     <link href="{{asset('multicolor/css/main.css')}}" rel="stylesheet">
     <link href="{{asset('multicolor/css/responsive.css')}}" rel="stylesheet">
 
     <!--[if lt IE 9]>
         <script src="js/html5shiv.js"></script>
         <script src="js/respond.min.js"></script>
-    <![endif]-->       
+    <![endif]-->
     <link rel="shortcut icon" href="{{asset('multicolor/images/ico/favicon.ico')}}">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{asset('multicolor/images/ico/apple-touch-icon-144-precomposed.png')}}">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{asset('multicolor/images/ico/apple-touch-icon-114-precomposed.png')}}">
@@ -25,7 +25,7 @@
 </head><!--/head-->
 
 <body>
-    <header id="header">      
+    <header id="header">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 overflow">
@@ -37,7 +37,7 @@
                             <li><a href=""><i class="fa fa-dribbble"></i></a></li>
                             <li><a href=""><i class="fa fa-linkedin"></i></a></li>
                         </ul>
-                    </div> 
+                    </div>
                 </div>
              </div>
         </div>
@@ -54,31 +54,31 @@
                     <a class="navbar-brand" href="index.html">
                         <h1><img src="{{asset('multicolor/images/log.png')}}" alt="log"></h1>
                     </a>
-                    
+
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="{{asset('beranda')}}">Beranda</a></li>
                          <li class="active"><a href="{{asset('mhs')}}">daftar</a></li>
                         <li class="active"><a href="{{asset('silatbetawi')}}"> Silat Betawi </i></a>
-                           
-                        </li>                    
+
+                        </li>
                         <li class="dropdown"><a href="">Event Kesenian<i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
                                 <li><a href="{{asset('seminar')}}">Seminar</a></li>
                                 <li><a href="workshop">Workshop</a></li>
-                        
+
                             </ul>
                         </li>
                         <li class="dropdown"><a href="portfolio.html">Galeri<i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
                                 <li><a href="foto">Dokumentasi Foto</a></li>
                                 <li><a href="video">Video</a></li>
-                              
+
                             </ul>
-                        </li>                         
-                        <li><a href="unjuk">Unjuk Kebolehan</a></li>   
-                                          @if (Auth::guest())
+                        </li>
+                        <li><a href="unjuk">Unjuk Kebolehan</a></li>
+                        {{-- @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
@@ -101,7 +101,7 @@
                                     </li>
                                 </ul>
                             </li>
-                        @endif
+                        @endif --}}
                 </div>
                 <div class="search">
                     <form role="form">
@@ -157,24 +157,24 @@
                                 <blockquote>Tangan terampil maen pukul, bukun untuk memukul melainkan untuk merangkul sesama manusia.</blockquote>
                                 <h3><a href="">- Bang Fauzi Tenabang </a></h3>
                             </div>
-                        </div>   
-                    </div> 
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="contact-info bottom">
                         <h2>Contacts</h2>
                         <address>
-                        E-mail: <a href="mailto:someone@example.com">email@email.com</a> <br> 
-                        Phone: +1 (123) 456 7890 <br> 
-                        Fax: +1 (123) 456 7891 <br> 
+                        E-mail: <a href="mailto:someone@example.com">email@email.com</a> <br>
+                        Phone: +1 (123) 456 7890 <br>
+                        Fax: +1 (123) 456 7891 <br>
                         </address>
 
                         <h2>Alamat Kantor</h2>
                         <address>
-                        Jl. Menteng Atas Barat<br> 
-                        Kel. Menteng atas <br> 
-                        Kec. Setiabudi <br> 
-                        Jakarta Selatan <br> 
+                        Jl. Menteng Atas Barat<br>
+                        Kel. Menteng atas <br>
+                        Kec. Setiabudi <br>
+                        Jakarta Selatan <br>
                         </address>
                     </div>
                 </div>
@@ -190,7 +190,7 @@
                             </div>
                             <div class="form-group">
                                 <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Your text here"></textarea>
-                            </div>                        
+                            </div>
                             <div class="form-group">
                                 <input type="submit" name="submit" class="btn btn-submit" value="Submit">
                             </div>
@@ -212,6 +212,6 @@
     <script type="text/javascript" src="{{asset('multicolor/js/bootstrap.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('multicolor/js/lightbox.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('multicolor/js/wow.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('multicolor/js/main.js')}}"></script>   
+    <script type="text/javascript" src="{{asset('multicolor/js/main.js')}}"></script>
 </body>
 </html>
