@@ -61,14 +61,8 @@
                         <li class="active"><a href="{{asset('beranda')}}">Beranda</a></li>
                          <li class="active"><a href="{{asset('mhs')}}">daftar</a></li>
                         <li class="active"><a href="{{asset('silatbetawi')}}"> Silat Betawi </i></a>
-
-                        </li>
-                        <li class="dropdown"><a href="">Event Kesenian<i class="fa fa-angle-down"></i></a>
-                            <ul role="menu" class="sub-menu">
-                                <li><a href="{{asset('seminar')}}">Seminar</a></li>
-                                <li><a href="workshop">Workshop</a></li>
-
-                            </ul>
+                            <li class="active"><a href="{{asset('silatbetawi')}}"> Seminar </i></a>
+                              <li class="active"><a href="{{asset('silatbetawi')}}"> Workshop </i></a>
                         </li>
                         <li class="dropdown"><a href="portfolio.html">Galeri<i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
@@ -77,7 +71,7 @@
 
                             </ul>
                         </li>
-                        <li><a href="unjuk">Unjuk Kebolehan</a></li>
+                        {{-- <li><a href="unjuk">Unjuk Kebolehan</a></li> --}}
                         {{-- @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
