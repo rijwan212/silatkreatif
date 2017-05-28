@@ -15,6 +15,7 @@
 // Front Page
 Route::get('/','PageController@getBeranda')->name('page.beranda');
 Route::get('silat-betawi', 'PageController@getSilatBetawi')->name('page.silat-betawi');
+Route::get('silat-betawi/{id}', 'PageController@getSilatBetawiId')->name('page.silat-betawi.show');
 Route::get('seminar', 'PageController@getSeminar')->name('page.seminar');
 Route::get('workshop', 'PageController@getWorkshop')->name('page.workshop');
 Route::get('galeri/foto', 'PageController@getGaleriFoto')->name('page.foto');
