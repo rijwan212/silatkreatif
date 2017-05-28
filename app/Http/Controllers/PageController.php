@@ -70,17 +70,6 @@ class PageController extends Controller
               'psb'         => 'required',
               'pst'         => 'required',
             ));
-        // simpan ke database request tertentu
-        /*
-        $mahasiswa = new Mahasiswa;
-        $mahasiswa->nim = $request->nim;
-        $mahasiswa->nama = $request->nama;
-        $mahasiswa->alamat = $request->alamat;
-        $mahasiswa->telepon = $request->telepon;
-        $mahasiswa->jenis_kelamin = $request->jenis_kelamin;
-        $mahasiswa->agama = $request->agama;
-        $mahasiswa->save();
-        */
         // simpan ke database semua request
         \App\Registrar::create($request->all());
         // flash messages
