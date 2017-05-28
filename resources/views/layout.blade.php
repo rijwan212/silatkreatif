@@ -58,11 +58,10 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="{{asset('beranda')}}">Beranda</a></li>
-                         <li class="active"><a href="{{asset('mhs')}}">daftar</a></li>
-                        <li class="active"><a href="{{asset('silatbetawi')}}"> Silat Betawi </i></a>
-                            <li class="active"><a href="{{asset('silatbetawi')}}"> Seminar </i></a>
-                              <li class="active"><a href="{{asset('silatbetawi')}}"> Workshop </i></a>
+                        <li class="{{ Request::is('/') ? "active" : "" }}"><a href="{{asset('beranda')}}">Beranda</a></li>
+                        <li class="{{ Request::is('/silat-betawi') ? "active" : "" }}"><a href="{{asset('silatbetawi')}}"> Silat Betawi </i></a>
+                        <li class="{{ Request::is('/seminar') ? "active" : "" }}"><a href="{{asset('silatbetawi')}}"> Seminar </i></a>
+                        <li class="{{ Request::is('/workshop') ? "active" : "" }}"><a href="{{asset('silatbetawi')}}"> Workshop </i></a>
                         </li>
                         <li class="dropdown"><a href="portfolio.html">Galeri<i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
@@ -71,6 +70,7 @@
 
                             </ul>
                         </li>
+                        <li class="{{ Request::is('/daftar') ? "active" : "" }}"><a href="{{asset('mhs')}}">daftar</a></li>
                         {{-- <li><a href="unjuk">Unjuk Kebolehan</a></li> --}}
                         {{-- @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
