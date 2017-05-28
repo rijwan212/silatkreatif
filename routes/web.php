@@ -42,6 +42,6 @@ Route::put('/dftr/{id}', 'HomeController@update')->name('update');
 Route::get('/dftr/{id}', 'HomeController@show')->name('show');
 Route::get('/dftr/{id}/edit', 'HomeController@edit')->name('edit');
 
-Auth::routes();
+//Auth::routes();
 
 Route::get('/home', 'HomeController@index');
