@@ -1,0 +1,83 @@
+.navbar-inverse {
+    background-color: #3EA0FF;
+    border-color: #3EA0FF;
+}
+
+
+.navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+   color: #fff;
+   background-color: RGBA(71, 38, 38, 0.02);
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fafbf6;
+}
+
+.open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+    color: #fff;
+    background-color: #187DD4;
+}
+
+.open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+    color: #fff;
+    background-color: #4C92ED;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+    color: #fff;
+    background-color:  #4C92ED;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #f9fafc;
+    background-color: #0a64e9;
+}
+
+.navbar-inverse .navbar-brand:hover {
+    color: #FCFCF9;
+    background-color: #1298ed;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #167BEC;
+}
+.navbar-inverse .navbar-toggle {
+    border-color: #5461ED;
+}
+
+#custom_carousel .item {
+
+    color:#05544b;
+    background-color:#e4f6f4;
+    padding:20px 0;
+}
+#custom_carousel .controls{
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:0;
+    margin:0;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    background:#82caf8;
+}
+#custom_carousel .controls li {
+    display: table-cell;
+    width: 1%;
+    max-width:90px
+}
+#custom_carousel .controls li.active {
+    background-color:#eee;
+    border-top:3px solid orange;
+}
+#custom_carousel .controls a small {
+    overflow:hidden;
+    display:block;
+    font-size:10px;
+    margin-top:5px;
+    font-weight:bold
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fcfcfe;
+}
