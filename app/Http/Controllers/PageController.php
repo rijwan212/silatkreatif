@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-//use Illuminate\Http\Request;
+use Illuminate\Http\Request;
 use Session;
-use Request;
+//use Request;
 use DB;
 use CRUDBooster;
+use App\Registrar;
 
 class PageController extends Controller
 {
@@ -53,5 +54,38 @@ class PageController extends Controller
     public function getDaftarSilat()
     {
         return view('page.daftar-silat');
+    }
+
+    public function postDaftarSilat(Request $request)
+    {
+        // validasi data
+        $this->validate($request, array(
+              'npd'         => 'required',
+              'name'        => 'required',
+              'birth'       => 'required',
+              'address'     => 'required',
+              'phone'       => 'required',
+              'gender'      => 'required',
+              'religion'    => 'required',
+              'psb'         => 'required',
+              'pst'         => 'required',
+            ));
+        // simpan ke database request tertentu
+        /*
+        $mahasiswa = new Mahasiswa;
+        $mahasiswa->nim = $request->nim;
+        $mahasiswa->nama = $request->nama;
+        $mahasiswa->alamat = $request->alamat;
+        $mahasiswa->telepon = $request->telepon;
+        $mahasiswa->jenis_kelamin = $request->jenis_kelamin;
+        $mahasiswa->agama = $request->agama;
+        $mahasiswa->save();
+        */
+        // simpan ke database semua request
+        \App\Registrar::create($request->all());
+        // flash messages
+        $request->session()->flash('status', 'Registrasi Berhasil!');
+        // redirect ke halaman
+        return redirect()->route('page.daftar-silat');
     }
 }

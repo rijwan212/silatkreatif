@@ -7,8 +7,8 @@
                 <div class="row">
                     <div class="action">
                         <div class="col-sm-12">
-                            <h1 class="title">Event Workshop</h1>
-                            <p>Workshop beladiri silat</p>
+                            <h1 class="title">Daftar Silat</h1>
+                            <p>Daftarkan Perguruan Silatmu</p>
                         </div>
                     </div>
                 </div>
@@ -19,125 +19,166 @@
 
     <section id="blog" class="padding-bottom">
         <div class="container">
-            <div class="row">
-                <div class="timeline-blog overflow padding-top">
-                    <div class="timeline-date text-center">
-                        <a href="#" class="btn btn-common uppercase">Shift Workshop Januari - Maret 2017</a>
-                    </div>
-                    <div class="timeline-divider overflow padding-bottom">
-                        <div class="col-sm-6 padding-right arrow-right wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <div class="single-blog timeline">
-                                <div class="single-blog-wrapper">
-                                    <div class="post-thumb">
-                                        <img src="images/blog/timeline/ws1.jpg" class="img-responsive" alt="">
-                                        <div class="post-overlay">
-                                           <span class="uppercase"><a href="#">14 <br><small>Feb</small></a></span>
-                                       </div>
-                                    </div>
-                                </div>
-                                <div class="post-content overflow">
-                                    <h2 class="post-title bold"><a href="blogdetails.html">Workshop | Beladiri yang berguna dalam kesehatan tubuh </a></h2>
-                                    <h3 class="post-author"><a href="#">Bersama Iko Uwais | Master tiga berantai</a></h3>
-                                    <p>Sebuah seminar tentang pentingnya beladiri silat dalam kesehatan tubuh. dibawakan oleh narasumber master silat tiga berantai iko uwais. Seminar ini akan membahas tentang pernapasan beladiri silat yang[...]</p>
-                                    <a href="#" class="read-more">View More</a>
-                                    <div class="post-bottom overflow">
+            <div class="row">            
+              <div class="col-md-8 col-md-offset-2">
+                          <div class="panel panel-default">
+                              <div class="panel-heading">Form Daftar Perguruan Silat</div>
+                              @if (session('status'))
+                                  <div class="alert alert-success">
+                                      {{ session('status') }}
+                                  </div>
+                              @endif
+                              <div class="panel-body">
+                                  <form class="form-horizontal" role="form" method="POST" action="{{ route('page.daftar-silat.post') }}">
+                                      {{ csrf_field() }}
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 padding-left padding-top arrow-left wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <div class="single-blog timeline">
-                                <div class="single-blog-wrapper">
-                                    <div class="post-thumb">
-                                        <img src="images/blog/timeline/ws2.jpg" class="img-responsive" alt="">
-                                        <div class="post-overlay">
-                                           <span class="uppercase"><a href="#">14 <br><small>Feb</small></a></span>
-                                       </div>
-                                    </div>
-                                </div>
-                                <div class="post-content overflow">
-                                    <h2 class="post-title bold"><a href="blogdetails.html#">Workshop | Pukulan Tanpa Bayangan</a></h2>
-                                    <h3 class="post-author"><a href="#">Bersama | Bang Fauzi Sabeni JTS</a></h3>
-                                    <p>Sebuah seminar yang akan membahas tentang bagaimana melakukan pukulan tanpa bayangan, pukulan tanpa bayangan adalah sebuah jurus yang disegani oleh para petarung. seminar akan dibawakan oleh bang fauzi JTS[...]</p>
-                                    <a href="#" class="read-more">View More</a>
-                                    <div class="post-bottom overflow">
+                                      <div class="form-group{{ $errors->has('npd') ? ' has-error' : '' }}">
+                                          <label for="npd" class="col-md-4 control-label">NPD</label>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 padding-right arrow-right wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <div class="single-blog timeline">
-                                <div class="single-blog-wrapper">
-                                    <div class="post-thumb">
-                                       <img src="images/blog/timeline/ws3.jpg" class="img-responsive" alt="">
-                                    </div>
-                                </div>
-                                 <div class="post-content overflow">
-                                    <h2 class="post-title bold"><a href="blogdetails.html#">Workshop | Silat dalam budaya Islam</a></h2>
-                                    <h3 class="post-author"><a href="#"> Bersama H.Busthomi</a></h3>
-                                    <p>Sebuah seminar yang akan membahas tentang perkembangan silat di Indonesia melalui penyebaran ISLAM. Seminar akan dibawakan oleh ahli seajarah H.Bust[...]</p>
-                                    <a href="#" class="read-more">View More</a>
-                                    <div class="post-bottom overflow">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-blog overflow">
-                    <div class="timeline-date text-center">
-                        <a href="" class="btn btn-common uppercase">Shift April 2017</a>
-                    </div>
-                    <div class="timeline-divider overflow padding-bottom">
-                        <div class="col-sm-6 padding-right arrow-right wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <div class="single-blog timeline">
-                                <div class="single-blog-wrapper">
-                                    <div class="post-thumb">
-                                        <img src="images/blog/timeline/ws5.jpg" class="img-responsive" alt="">
-                                        <div class="post-overlay">
-                                           <span class="uppercase"><a href="#">14 <br><small>Feb</small></a></span>
-                                       </div>
-                                    </div>
-                                </div>
-                                <div class="post-content overflow">
-                                    <h2 class="post-title bold"><a href="blogdetails.html">Workshop | Budaya Betawi dimata Indonesia </a></h2>
-                                    <h3 class="post-author"><a href="#">Bersama | Bpk Drs. H. Lulung S,Kom</a></h3>
-                                    <p>Sebuah seminar yang akan membahas tentang kebudayaan betawi dari sisi negarawan. yang akan mengangkat tema kebudayaan betawi dalam kenangan[...]</p>
-                                    <a href="#" class="read-more">View More</a>
-                                    <div class="post-bottom overflow">
+                                          <div class="col-md-6">
+                                              <input id="npd" type="text" class="form-control" name="npd" value="{{ old('npd') }}" required autofocus>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 padding-left padding-top arrow-left wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <div class="single-blog timeline">
-                                <div class="single-blog-wrapper">
-                                    <div class="post-thumb">
-                                        <img src="images/blog/timeline/ws4.jpg" class="img-responsive" alt="">
-                                        <div class="post-overlay">
-                                           <span class="uppercase"><a href="#">14 <br><small>Feb</small></a></span>
-                                       </div>
-                                    </div>
-                                </div>
-                                <div class="post-content overflow">
-                                    <h2 class="post-title bold"><a href="blogdetails.html">Workshop | menengok sejarah si pitung</a></h2>
-                                    <h3 class="post-author"><a href="#">Bersama | H.Ridwan Saidi ( Cendekian Budaya )</a></h3>
-                                    <p>Membahas sosok nyata sang jawara betawi, sisi lain yang tak terungkap oleh masyarakat dibalik beladiri sang pitung. Mengupas sejarah yang dilupakan oleh sebagian masyarakat betawi[...]</p>
-                                    <a href="#" class="read-more">View More</a>
-                                    <div class="post-bottom overflow">
+                                              @if ($errors->has('npd'))
+                                                  <span class="help-block">
+                                                      <strong>{{ $errors->first('npd') }}</strong>
+                                                  </span>
+                                              @endif
+                                          </div>
+                                      </div>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-date text-center">
-                        <a href="#" class="btn btn-common">Lihat lebih banyak</a>
-                    </div>
-                </div>
+                                      <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                                          <label for="name" class="col-md-4 control-label">Nama</label>
+
+                                          <div class="col-md-6">
+                                              <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
+
+                                              @if ($errors->has('name'))
+                                                  <span class="help-block">
+                                                      <strong>{{ $errors->first('name') }}</strong>
+                                                  </span>
+                                              @endif
+                                          </div>
+                                      </div>
+
+                                      <div class="form-group{{ $errors->has('birth') ? ' has-error' : '' }}">
+                                          <label for="birth" class="col-md-4 control-label">Tanggal Lahir</label>
+
+                                          <div class="col-md-6">
+                                            <input id="birth" type="text" class="form-control" name="birth" value="{{ old('birth') }}" required autofocus>
+
+                                              @if ($errors->has('birth'))
+                                                  <span class="help-block">
+                                                      <strong>{{ $errors->first('birth') }}</strong>
+                                                  </span>
+                                              @endif
+                                          </div>
+                                      </div>
+
+                                      <div class="form-group{{ $errors->has('address') ? ' has-error' : '' }}">
+                                          <label for="address" class="col-md-4 control-label">Alamat</label>
+
+                                          <div class="col-md-6">
+                                              <textarea name="address" rows="8" cols="80" id="address" type="text" class="form-control" value="{{ old('address') }}" required></textarea>
+
+                                              @if ($errors->has('address'))
+                                                  <span class="help-block">
+                                                      <strong>{{ $errors->first('address') }}</strong>
+                                                  </span>
+                                              @endif
+                                          </div>
+                                      </div>
+
+                                      <div class="form-group{{ $errors->has('phone') ? ' has-error' : '' }}">
+                                          <label for="phone" class="col-md-4 control-label">Telp</label>
+
+                                          <div class="col-md-6">
+                                              <input id="phone" type="text" class="form-control" name="phone" required>
+
+                                              @if ($errors->has('phone'))
+                                                  <span class="help-block">
+                                                      <strong>{{ $errors->first('phone') }}</strong>
+                                                  </span>
+                                              @endif
+                                          </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                          <label for="gender" class="col-md-4 control-label">Jenis Kelamin</label>
+
+                                          <div class="col-md-6">
+                                            <div class="radio">
+                                              <label><input type="radio" name="gender" value="Laki-laki">Laki-laki</label>
+                                              <label><input type="radio" name="gender" value="Perempuan">Perempuan</label>
+                                            </div>
+                                          </div>
+
+                                          @if ($errors->has('gender'))
+                                              <span class="help-block">
+                                                  <strong>{{ $errors->first('gender') }}</strong>
+                                              </span>
+                                          @endif
+                                      </div>
+
+                                      <div class="form-group">
+                                          <label for="religion" class="col-md-4 control-label">Agama</label>
+
+                                          <div class="col-md-6">
+                                            <select class="form-control" id="religion" name="religion">
+                                              <option selected="selected">-- Pilih --</option>
+                                              <option value="Islam">Islam</option>
+                                              <option value="Kristen">Kristen</option>
+                                              <option value="Hindu">Hindu</option>
+                                              <option value="Buddha">Buddha</option>
+                                              <option value="Konghucu">Konghucu</option>
+                                            </select>
+                                          </div>
+
+                                          @if ($errors->has('religion'))
+                                              <span class="help-block">
+                                                  <strong>{{ $errors->first('religion') }}</strong>
+                                              </span>
+                                          @endif
+                                      </div>
+
+                                      <div class="form-group{{ $errors->has('psb') ? ' has-error' : '' }}">
+                                          <label for="psb" class="col-md-4 control-label">PSB</label>
+
+                                          <div class="col-md-6">
+                                              <input id="psb" type="text" class="form-control" name="psb" value="{{ old('psb') }}" required autofocus>
+
+                                              @if ($errors->has('psb'))
+                                                  <span class="help-block">
+                                                      <strong>{{ $errors->first('psb') }}</strong>
+                                                  </span>
+                                              @endif
+                                          </div>
+                                      </div>
+
+                                      <div class="form-group{{ $errors->has('pst') ? ' has-error' : '' }}">
+                                          <label for="pst" class="col-md-4 control-label">PST</label>
+
+                                          <div class="col-md-6">
+                                              <input id="pst" type="text" class="form-control" name="pst" value="{{ old('pst') }}" required autofocus>
+
+                                              @if ($errors->has('pst'))
+                                                  <span class="help-block">
+                                                      <strong>{{ $errors->first('pst') }}</strong>
+                                                  </span>
+                                              @endif
+                                          </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                          <div class="col-md-6 col-md-offset-4">
+                                              <button type="submit" class="btn btn-success btn-block">
+                                                  Daftar
+                                              </button>
+                                          </div>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
             </div>
         </div>
     </section>

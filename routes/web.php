@@ -21,6 +21,7 @@ Route::get('workshop', 'PageController@getWorkshop')->name('page.workshop');
 Route::get('galeri/foto', 'PageController@getGaleriFoto')->name('page.foto');
 Route::get('galeri/video', 'PageController@getGaleriVideo')->name('page.video');
 Route::get('daftar-silat', 'PageController@getDaftarSilat')->name('page.daftar-silat');
+Route::post('daftar-silat', 'PageController@postDaftarSilat')->name('page.daftar-silat.post');
 
 //Auth::routes();
 
