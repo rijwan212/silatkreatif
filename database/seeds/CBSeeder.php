@@ -11,15 +11,15 @@ class CBSeeder extends Seeder
      */
     public function run()
     {
-        $this->command->info('Please wait updating the data...');        
-        
-        $this->call('Cms_usersSeeder');                           
-        $this->call('Cms_modulsSeeder');                         
-        $this->call('Cms_privilegesSeeder');        
-        $this->call('Cms_privileges_rolesSeeder');       
+        $this->command->info('Please wait updating the data...');
+
+        $this->call('Cms_usersSeeder');
+        $this->call('Cms_modulsSeeder');
+        $this->call('Cms_privilegesSeeder');
+        $this->call('Cms_privileges_rolesSeeder');
         $this->call('Cms_settingsSeeder');
         $this->call('CmsEmailTemplates');
-        
+
         $this->command->info('Updating the data completed !');
     }
 }
@@ -36,7 +36,7 @@ class CmsEmailTemplates extends Seeder {
             'description' =>'[password]',
             'from_name'   =>'System',
             'from_email'  =>'system@crudbooster.com',
-            'cc_email'    =>NULL            
+            'cc_email'    =>NULL
             ]);
     }
 }
@@ -44,12 +44,12 @@ class CmsEmailTemplates extends Seeder {
 class Cms_settingsSeeder extends Seeder {
 
     public function run()
-    {        
+    {
 
        $data = [
 
         //LOGIN REGISTER STYLE
-        [   
+        [
             'created_at'=>date('Y-m-d H:i:s'),
             'name'=>'login_background_color',
             'label'=>'Login Background Color',
@@ -82,7 +82,7 @@ class Cms_settingsSeeder extends Seeder {
         [
             'created_at'=>date('Y-m-d H:i:s'),
             'name'=>'email_sender',
-            'label'=>'Email Sender',            
+            'label'=>'Email Sender',
             'content'=>'support@crudbooster.com',
             'content_input_type'=>'text',
             'group_setting'=>trans('crudbooster.email_setting'),
@@ -153,7 +153,7 @@ class Cms_settingsSeeder extends Seeder {
             'content'=>'Legal',
             'content_input_type'=>'text',
             'dataenum'=>NULL,
-            'helper'=>'Paper size, ex : A4, Legal, etc'],        
+            'helper'=>'Paper size, ex : A4, Legal, etc'],
         [
             'created_at'=>date('Y-m-d H:i:s'),
             'name'=>'logo',
@@ -180,7 +180,7 @@ class Cms_settingsSeeder extends Seeder {
             'content_input_type'=>'select',
             'group_setting'=>trans('crudbooster.application_setting'),
             'dataenum'=>'true,false',
-            'helper'=>NULL],        
+            'helper'=>NULL],
         [
             'created_at'=>date('Y-m-d H:i:s'),
             'name'=>'google_api_key',
@@ -207,13 +207,13 @@ class Cms_settingsSeeder extends Seeder {
                 if($count > 1) {
                     $newsId = DB::table('cms_settings')->where('name',$row['name'])->orderby('id','asc')->take(1)->first();
                     DB::table('cms_settings')->where('name',$row['name'])->where('id','!=',$newsId->id)->delete();
-                }                
+                }
                 continue;
             }
             $row['id'] = DB::table('cms_settings')->max('id') + 1;
             DB::table('cms_settings')->insert($row);
         }
-        
+
     }
 }
 
@@ -222,7 +222,7 @@ class Cms_settingsSeeder extends Seeder {
 class Cms_privileges_rolesSeeder extends Seeder {
 
     public function run()
-    {                
+    {
 
         if(DB::table('cms_privileges_roles')->count() == 0) {
             $modules = DB::table('cms_moduls')->get();
@@ -265,153 +265,223 @@ class Cms_privileges_rolesSeeder extends Seeder {
                 $i++;
             }
         }
-        
+
     }
 }
 
 class Cms_privilegesSeeder extends Seeder {
 
     public function run()
-    {        
-        
+    {
+
         if(DB::table('cms_privileges')->where('name','Super Administrator')->count() == 0) {
-            DB::table('cms_privileges')->insert([    
-            'id'            =>DB::table('cms_privileges_roles')->max('id')+1,        
+            DB::table('cms_privileges')->insert([
+            'id'            =>DB::table('cms_privileges_roles')->max('id')+1,
             'created_at'    =>date('Y-m-d H:i:s'),
             'name'          =>'Super Administrator',
             'is_superadmin' =>1,
             'theme_color'   =>'skin-red'
-            ]);    
-        }        
+            ]);
+        }
     }
 }
 
 class Cms_modulsSeeder extends Seeder {
 
     public function run()
-    {        
+    {
 
-        /* 
+        /*
             1 = Public
-            2 = Setting        
+            2 = Setting
         */
 
         $data = [
         [
-            
+
             'created_at'=>date('Y-m-d H:i:s'),
             'name'=>'Notifications',
             'icon'=>'fa fa-cog',
             'path'=>'notifications',
             'table_name'=>'cms_notifications',
             'controller'=>'NotificationsController',
-            'is_protected'=>1,                                
+            'is_protected'=>1,
             'is_active'=>1
         ],
         [
-            
+
             'created_at'=>date('Y-m-d H:i:s'),
             'name'=>'Privileges',
             'icon'=>'fa fa-cog',
             'path'=>'privileges',
             'table_name'=>'cms_privileges',
             'controller'=>'PrivilegesController',
-            'is_protected'=>1,                                
+            'is_protected'=>1,
             'is_active'=>1
         ],
         [
-            
+
             'created_at'=>date('Y-m-d H:i:s'),
             'name'=>'Privileges Roles',
             'icon'=>'fa fa-cog',
             'path'=>'privileges_roles',
             'table_name'=>'cms_privileges_roles',
             'controller'=>'PrivilegesRolesController',
-            'is_protected'=>1,                                
+            'is_protected'=>1,
             'is_active'=>1
         ],
-        [   
-            
+        [
+
             'created_at'=>date('Y-m-d H:i:s'),
             'name'=>'Users',
             'icon'=>'fa fa-users',
             'path'=>'users',
             'table_name'=>'cms_users',
-            'controller'=>'AdminCmsUsersController',     
-            'is_protected'=>0,                                   
+            'controller'=>'AdminCmsUsersController',
+            'is_protected'=>0,
             'is_active'=>1
         ],
-        [   
-            
+        [
+
             'created_at'=>date('Y-m-d H:i:s'),
             'name'=>'Settings',
             'icon'=>'fa fa-cog',
             'path'=>'settings',
             'table_name'=>'cms_settings',
             'controller'=>'SettingsController',
-            'is_protected'=>1,                                
+            'is_protected'=>1,
             'is_active'=>1
-        ],[ 
-            
+        ],[
+
             'created_at'=>date('Y-m-d H:i:s'),
             'name'=>'Module Generator',
             'icon'=>'fa fa-database',
             'path'=>'module_generator',
             'table_name'=>'cms_moduls',
             'controller'=>'ModulsController',
-            'is_protected'=>1,                                
+            'is_protected'=>1,
             'is_active'=>1
-        ],[ 
-            
+        ],[
+
             'created_at'=>date('Y-m-d H:i:s'),
             'name'=>'Menu Management',
             'icon'=>'fa fa-bars',
             'path'=>'menu_management',
             'table_name'=>'cms_menus',
             'controller'=>'MenusController',
-            'is_protected'=>1,                                
+            'is_protected'=>1,
             'is_active'=>1
-        ],[ 
-            
+        ],[
+
             'created_at'=>date('Y-m-d H:i:s'),
             'name'=>'Email Template',
             'icon'=>'fa fa-envelope-o',
             'path'=>'email_templates',
             'table_name'=>'cms_email_templates',
             'controller'=>'EmailTemplatesController',
-            'is_protected'=>1,                                
+            'is_protected'=>1,
             'is_active'=>1
-        ],[ 
-            
+        ],[
+
             'created_at'=>date('Y-m-d H:i:s'),
             'name'=>'Statistic Builder',
             'icon'=>'fa fa-dashboard',
             'path'=>'statistic_builder',
             'table_name'=>'cms_statistics',
-            'controller'=>'StatisticBuilderController',            
-            'is_protected'=>1,                                
+            'controller'=>'StatisticBuilderController',
+            'is_protected'=>1,
             'is_active'=>1
-        ],[ 
-            
+        ],[
+
             'created_at'=>date('Y-m-d H:i:s'),
             'name'=>'API Generator',
             'icon'=>'fa fa-cloud-download',
             'path'=>'api_generator',
             'table_name'=>'',
             'controller'=>'ApiCustomController',
-            'is_protected'=>1,                                
+            'is_protected'=>1,
             'is_active'=>1
-        ],[ 
-            
+        ],[
+
             'created_at'=>date('Y-m-d H:i:s'),
             'name'=>'Logs',
             'icon'=>'fa fa-flag-o',
             'path'=>'logs',
             'table_name'=>'cms_logs',
             'controller'=>'LogsController',
-            'is_protected'=>1,                                
+            'is_protected'=>1,
             'is_active'=>1
-        ]      
+        ],[
+
+            'created_at'=>date('Y-m-d H:i:s'),
+            'name'=>'Posts',
+            'icon'=>'fa fa-pencil',
+            'path'=>'posts',
+            'table_name'=>'posts',
+            'controller'=>'AdminPostsController',
+            'is_protected'=>0,
+            'is_active'=>0
+        ],[
+
+            'created_at'=>date('Y-m-d H:i:s'),
+            'name'=>'Category',
+            'icon'=>'fa fa-archive',
+            'path'=>'category',
+            'table_name'=>'category',
+            'controller'=>'AdminCategoryController',
+            'is_protected'=>0,
+            'is_active'=>0
+        ],[
+
+            'created_at'=>date('Y-m-d H:i:s'),
+            'name'=>'Seminar',
+            'icon'=>'fa fa-user',
+            'path'=>'seminar',
+            'table_name'=>'seminar',
+            'controller'=>'AdminSeminarController',
+            'is_protected'=>0,
+            'is_active'=>0
+        ],[
+
+            'created_at'=>date('Y-m-d H:i:s'),
+            'name'=>'Workshop',
+            'icon'=>'fa fa-briefcase',
+            'path'=>'workshop',
+            'table_name'=>'workshop',
+            'controller'=>'AdminWorkshopController',
+            'is_protected'=>0,
+            'is_active'=>0
+        ],[
+
+            'created_at'=>date('Y-m-d H:i:s'),
+            'name'=>'Photos',
+            'icon'=>'fa fa-camera',
+            'path'=>'photos',
+            'table_name'=>'photos',
+            'controller'=>'AdminPhotosController',
+            'is_protected'=>0,
+            'is_active'=>0
+        ],[
+
+            'created_at'=>date('Y-m-d H:i:s'),
+            'name'=>'Videos',
+            'icon'=>'fa fa-video-camera',
+            'path'=>'videos',
+            'table_name'=>'videos',
+            'controller'=>'AdminVideosController',
+            'is_protected'=>0,
+            'is_active'=>0
+        ],[
+
+            'created_at'=>date('Y-m-d H:i:s'),
+            'name'=>'Registrar',
+            'icon'=>'fa fa-group',
+            'path'=>'registrar',
+            'table_name'=>'registrar',
+            'controller'=>'AdminRegistrarController',
+            'is_protected'=>0,
+            'is_active'=>0
+        ]
             ];
 
 
@@ -429,22 +499,21 @@ class Cms_modulsSeeder extends Seeder {
 class Cms_usersSeeder extends Seeder {
 
     public function run()
-    {        
-        
+    {
+
         if(DB::table('cms_users')->count() == 0) {
             $password = \Hash::make('123456');
             $cms_users = DB::table('cms_users')->insert(array(
                 'id'                =>DB::table('cms_users')->max('id')+1,
                 'created_at'        =>date('Y-m-d H:i:s'),
-                'name'              => 'Super Admin',                
+                'name'              => 'Super Admin',
                 'email'             => 'admin@crudbooster.com',
                 'password'          => $password,
-                'id_cms_privileges' => 1,                
+                'id_cms_privileges' => 1,
                 'status'            =>'Active'
             ));
-        }            
+        }
 
     }
 
 }
-
