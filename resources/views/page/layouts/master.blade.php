@@ -63,7 +63,7 @@
                         <li class="{{ Request::is('seminar') ? "active" : "" }}"><a href="/seminar"> Event Silat </i></a>
                         <li class="{{ Request::is('workshop') ? "active" : "" }}"><a href="/workshop"> Contact </i></a>
                         </li>
-                        <li class="dropdown"><a href="portfolio.html">Galeri<i class="fa fa-angle-down"></i></a>
+                        <li class="dropdown"><a href="#">Galeri<i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
                                 <li><a href="/galeri/foto">Dokumentasi Foto</a></li>
                                 <li><a href="/galeri/video">Video</a></li>
