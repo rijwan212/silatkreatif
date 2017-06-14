@@ -1,146 +1,103 @@
 @extends('page.layouts.master')
 @section('content')
 
-    <section id="page-breadcrumb">
-        <div class="vertical-center sun">
-             <div class="container">
-                <div class="row">
-                    <div class="action">
-                        <div class="col-sm-12">
-                            <h1 class="title">Event Workshop</h1>
-                            <p>Workshop beladiri silat</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--/#page-breadcrumb-->
-
-    <section id="blog" class="padding-bottom">
+<section id="page-breadcrumb">
+    <div class="vertical-center sun">
         <div class="container">
             <div class="row">
-                <div class="timeline-blog overflow padding-top">
-                    <div class="timeline-date text-center">
-                        <a href="#" class="btn btn-common uppercase">Shift Workshop Januari - Maret 2017</a>
-                    </div>
-                    <div class="timeline-divider overflow padding-bottom">
-                        <div class="col-sm-6 padding-right arrow-right wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <div class="single-blog timeline">
-                                <div class="single-blog-wrapper">
-                                    <div class="post-thumb">
-                                        <img src="images/blog/timeline/ws1.jpg" class="img-responsive" alt="">
-                                        <div class="post-overlay">
-                                           <span class="uppercase"><a href="#">14 <br><small>Feb</small></a></span>
-                                       </div>
-                                    </div>
-                                </div>
-                                <div class="post-content overflow">
-                                    <h2 class="post-title bold"><a href="blogdetails.html">Workshop | Beladiri yang berguna dalam kesehatan tubuh </a></h2>
-                                    <h3 class="post-author"><a href="#">Bersama Iko Uwais | Master tiga berantai</a></h3>
-                                    <p>Sebuah seminar tentang pentingnya beladiri silat dalam kesehatan tubuh. dibawakan oleh narasumber master silat tiga berantai iko uwais. Seminar ini akan membahas tentang pernapasan beladiri silat yang[...]</p>
-                                    <a href="#" class="read-more">View More</a>
-                                    <div class="post-bottom overflow">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 padding-left padding-top arrow-left wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <div class="single-blog timeline">
-                                <div class="single-blog-wrapper">
-                                    <div class="post-thumb">
-                                        <img src="images/blog/timeline/ws2.jpg" class="img-responsive" alt="">
-                                        <div class="post-overlay">
-                                           <span class="uppercase"><a href="#">14 <br><small>Feb</small></a></span>
-                                       </div>
-                                    </div>
-                                </div>
-                                <div class="post-content overflow">
-                                    <h2 class="post-title bold"><a href="blogdetails.html#">Workshop | Pukulan Tanpa Bayangan</a></h2>
-                                    <h3 class="post-author"><a href="#">Bersama | Bang Fauzi Sabeni JTS</a></h3>
-                                    <p>Sebuah seminar yang akan membahas tentang bagaimana melakukan pukulan tanpa bayangan, pukulan tanpa bayangan adalah sebuah jurus yang disegani oleh para petarung. seminar akan dibawakan oleh bang fauzi JTS[...]</p>
-                                    <a href="#" class="read-more">View More</a>
-                                    <div class="post-bottom overflow">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 padding-right arrow-right wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <div class="single-blog timeline">
-                                <div class="single-blog-wrapper">
-                                    <div class="post-thumb">
-                                       <img src="images/blog/timeline/ws3.jpg" class="img-responsive" alt="">
-                                    </div>
-                                </div>
-                                 <div class="post-content overflow">
-                                    <h2 class="post-title bold"><a href="blogdetails.html#">Workshop | Silat dalam budaya Islam</a></h2>
-                                    <h3 class="post-author"><a href="#"> Bersama H.Busthomi</a></h3>
-                                    <p>Sebuah seminar yang akan membahas tentang perkembangan silat di Indonesia melalui penyebaran ISLAM. Seminar akan dibawakan oleh ahli seajarah H.Bust[...]</p>
-                                    <a href="#" class="read-more">View More</a>
-                                    <div class="post-bottom overflow">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-blog overflow">
-                    <div class="timeline-date text-center">
-                        <a href="" class="btn btn-common uppercase">Shift April 2017</a>
-                    </div>
-                    <div class="timeline-divider overflow padding-bottom">
-                        <div class="col-sm-6 padding-right arrow-right wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <div class="single-blog timeline">
-                                <div class="single-blog-wrapper">
-                                    <div class="post-thumb">
-                                        <img src="images/blog/timeline/ws5.jpg" class="img-responsive" alt="">
-                                        <div class="post-overlay">
-                                           <span class="uppercase"><a href="#">14 <br><small>Feb</small></a></span>
-                                       </div>
-                                    </div>
-                                </div>
-                                <div class="post-content overflow">
-                                    <h2 class="post-title bold"><a href="blogdetails.html">Workshop | Budaya Betawi dimata Indonesia </a></h2>
-                                    <h3 class="post-author"><a href="#">Bersama | Bpk Drs. H. Lulung S,Kom</a></h3>
-                                    <p>Sebuah seminar yang akan membahas tentang kebudayaan betawi dari sisi negarawan. yang akan mengangkat tema kebudayaan betawi dalam kenangan[...]</p>
-                                    <a href="#" class="read-more">View More</a>
-                                    <div class="post-bottom overflow">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 padding-left padding-top arrow-left wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <div class="single-blog timeline">
-                                <div class="single-blog-wrapper">
-                                    <div class="post-thumb">
-                                        <img src="images/blog/timeline/ws4.jpg" class="img-responsive" alt="">
-                                        <div class="post-overlay">
-                                           <span class="uppercase"><a href="#">14 <br><small>Feb</small></a></span>
-                                       </div>
-                                    </div>
-                                </div>
-                                <div class="post-content overflow">
-                                    <h2 class="post-title bold"><a href="blogdetails.html">Workshop | menengok sejarah si pitung</a></h2>
-                                    <h3 class="post-author"><a href="#">Bersama | H.Ridwan Saidi ( Cendekian Budaya )</a></h3>
-                                    <p>Membahas sosok nyata sang jawara betawi, sisi lain yang tak terungkap oleh masyarakat dibalik beladiri sang pitung. Mengupas sejarah yang dilupakan oleh sebagian masyarakat betawi[...]</p>
-                                    <a href="#" class="read-more">View More</a>
-                                    <div class="post-bottom overflow">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-date text-center">
-                        <a href="#" class="btn btn-common">Lihat lebih banyak</a>
+                <div class="action">
+                    <div class="col-sm-12">
+                        <h1 class="title">Silatkreatif.com</h1>
+                        <p>Contact Person</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<!--/#page-breadcrumb-->
+
+<section id="blog" class="padding-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="timeline-blog overflow padding-top">
+                <div class="timeline-date text-center">
+                    <a href="#" class="btn btn-common uppercase">Alamat Sekretariat Silatkreatif</a>
+                </div>
+
+                <section id="map-section">
+                    <div class="container">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.117323194313!2d106.82905331477006!3d-6.378853495384299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec11e6ecbe35%3A0x45e4fdba5c9fa9c0!2sJl.+Margonda+Raya%2C+Kota+Depok%2C+Jawa+Barat%2C+Indonesia!5e0!3m2!1sid!2s!4v1496120912423" width="800" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                        <div class="contact-info">
+                            <h2>Contacts</h2>
+                            <address>
+                E-mail: <a href="mailto:someone@example.com">email@email.com</a> <br> 
+                Phone: +1 (123) 456 7890 <br> 
+                Fax: +1 (123) 456 7891 <br> 
+                </address>
+
+                            <h2>Address</h2>
+                            <address>
+                Unit C2, St.Vincent's Trading Est., <br> 
+                Feeder Road, <br> 
+                Bristol, BS2 0UY <br> 
+                United Kingdom <br> 
+                </address>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="timeline-date text-center">
+
+                    <h1 class="title text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="300ms">Sekretariat silatkreatif.com</h1>
+                    <p class="text-center padding-bottom wow fadeInDown" data-wow-duration="400ms" data-wow-delay="400ms">Silatkreatif.com bertempat dipadepokan silat Sabeni Rahmat Tenabang.
+                        <br> Jalan menteng atas selatan 3, Kel. Menteng atas Kec. Setiabudi Jakarta Selatan 12960. Kami menunggu para jawara & pesilat untuk silaturahmi ke tempat kami. :)
+
+
+
+
+
+                    </p>
+
+
+
+                    <div class="row">
+                        <div class="col-sm-12 wow fadeInDown" align="center" data-wow-duration="1000ms" data-wow-delay="0ms">
+                            <img src="/images/log.png" class align="center"="img-responsive" alt="">
+
+
+
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="time-count">
+                                <ul id="countdown">
+                                    <li class="angle-one">
+                                        <span class="days time-font">Si</span>
+                                        <p>jawara</p>
+                                    </li>
+                                    <li class="angle-two">
+                                        <span class="hours time-font">Lat</span>
+                                        <p>betawi</p>
+                                    </li>
+                                    <li class="angle-three">
+                                        <span class="minutes time-font">Krea</span>
+                                        <p class="minute">semangat</p>
+                                    </li>
+                                    <li class="angle-four">
+                                        <span class="seconds time-font">Tif</span>
+                                        <p>45</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+</section>
     <!--/#blog-->
 
   @endsection

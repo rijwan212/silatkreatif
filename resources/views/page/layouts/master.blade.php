@@ -60,8 +60,8 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="{{ Request::is('/') ? "active" : "" }}"><a href="/">Beranda</a></li>
                         <li class="{{ Request::is('silat-betawi') ? "active" : "" }}"><a href="/silat-betawi"> Silat Betawi </i></a>
-                        <li class="{{ Request::is('seminar') ? "active" : "" }}"><a href="/seminar"> Seminar </i></a>
-                        <li class="{{ Request::is('workshop') ? "active" : "" }}"><a href="/workshop"> Workshop </i></a>
+                        <li class="{{ Request::is('seminar') ? "active" : "" }}"><a href="/seminar"> Event Silat </i></a>
+                        <li class="{{ Request::is('workshop') ? "active" : "" }}"><a href="/workshop"> Contact </i></a>
                         </li>
                         <li class="dropdown"><a href="portfolio.html">Galeri<i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
@@ -70,7 +70,7 @@
 
                             </ul>
                         </li>
-                        <li class="{{ Request::is('daftar-silat') ? "active" : "" }}"><a href="/daftar-silat">daftar</a></li>
+                        </li>
                         {{-- <li><a href="unjuk">Unjuk Kebolehan</a></li> --}}
                         {{-- @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
@@ -120,7 +120,19 @@
 
     </div>
 
-
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/593a554fb3d02e11ecc68fb5/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 
 
 
